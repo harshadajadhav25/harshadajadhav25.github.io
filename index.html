@@ -1,89 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Harshada Jadhav | Data Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="utf-8" />
+  <title>Harshada Jadhav | Data Analyst Portfolio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f4f6f8;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #1f2937;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-    }
-
-    header p {
-      margin: 10px 0 0;
-      font-size: 18px;
-      opacity: 0.9;
-    }
-
-    .links a {
-      margin: 0 10px;
-      color: #60a5fa;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 6px;
-      margin-bottom: 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
-    }
-
-    .card h3 {
-      margin-top: 0;
-    }
-
-    .card a {
-      color: #2563eb;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #1f2937;
-      color: white;
-      margin-top: 40px;
-    }
+    :root{--bg:#f4f6f8;--card:#ffffff;--accent:#2563eb;--muted:#6b7280;--dark:#0f1724}
+    body{font-family:Inter,Arial,sans-serif;margin:0;background:var(--bg);color:#111}
+    header{background:var(--dark);color:white;padding:48px 20px;text-align:center}
+    header h1{margin:0;font-size:36px;letter-spacing:0.2px}
+    header p{margin:8px 0 0;color:#c7d2fe}
+    .links a{color:#93c5fd;text-decoration:none;margin:0 10px;font-weight:600}
+    .container{max-width:980px;margin:40px auto;padding:0 20px}
+    h2{font-size:20px;margin:0 0 12px;border-bottom:1px solid #e6e9ec;padding-bottom:8px}
+    .card{background:var(--card);padding:20px;border-radius:10px;box-shadow:0 6px 20px rgba(2,6,23,0.06);margin-bottom:20px}
+    .two-col{display:grid;grid-template-columns:1fr 320px;gap:20px}
+    .skill-list p{margin:6px 0;color:var(--muted)}
+    .project-links a{color:var(--accent);text-decoration:none;font-weight:600;margin-right:12px}
+    footer{background:var(--dark);color:white;padding:24px;text-align:center;margin-top:30px}
+    @media (max-width:880px){.two-col{grid-template-columns:1fr}}
+    .role-title{font-weight:700;margin:0}
+    .role-meta{color:var(--muted);margin:6px 0 12px}
+    ul.bullets{padding-left:18px;margin:0}
   </style>
 </head>
-
 <body>
 
 <header>
   <h1>Harshada Jadhav</h1>
-  <p>Data Analyst | AWS | Python | SQL | Tableau</p>
+  <p>Data Analyst • SQL • Python • Tableau • Business insights</p>
   <div class="links">
     <a href="https://www.linkedin.com/in/harshada-jadhav/" target="_blank">LinkedIn</a>
     <a href="https://github.com/harshadajadhav25" target="_blank">GitHub</a>
@@ -91,71 +36,101 @@
   </div>
 </header>
 
-<div class="container">
+<main class="container">
 
   <section>
-    <h2>About Me</h2>
+    <h2>About</h2>
     <div class="card">
       <p>
-        I am a Master's graduate in Computer Science from California State University, Los Angeles, with over 2 years of professional experience in Data Engineering. 
-        I specialize in building scalable ETL pipelines using AWS, Python, and PySpark, and transforming complex datasets into actionable business insights through SQL and data visualization.
+        Master's in Computer Science (California State University, Los Angeles). I specialize in SQL-first analysis, data cleaning,
+        exploratory data analysis with Python, and dashboarding in Tableau / Power BI to convert raw data into measurable business outcomes.
+      </p>
+      <p style="color:var(--muted);margin-top:8px">
+        (Experience details taken from your resume.) :contentReference[oaicite:1]{index=1}
       </p>
     </div>
   </section>
 
-  <section>
-    <h2>Technical Skills</h2>
-    <div class="card">
-      <p><strong>Programming:</strong> Python, SQL, PySpark</p>
-      <p><strong>Cloud & Big Data:</strong> AWS (Glue, S3, Lambda, RDS, Athena, EC2), Databricks</p>
-      <p><strong>Visualization:</strong> Tableau, Power BI, Dash</p>
-      <p><strong>Databases:</strong> MySQL, PostgreSQL</p>
-      <p><strong>Tools:</strong> GitHub, CI/CD, Microsoft Suite</p>
-    </div>
-  </section>
+  <div class="two-col">
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="card">
+        <p class="role-title">Data Science Fellow — Chicago Education Advocacy Cooperative (ChiEAC)</p>
+        <p class="role-meta">Chicago, IL · Aug 2025 – Present</p>
+        <ul class="bullets">
+          <li>Analyzed customer behavior and churn using Python KPIs; identified a 19.7% overall churn rate and delivered actionable segment-level insights.</li>
+          <li>Quantified ~$310K in revenue at risk by segmenting high-risk customers and prioritizing retention actions for bronze & silver tiers.</li>
+          <li>Built KPI dashboards and executive summaries to translate user behavior into business decisions for retention strategy.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <p class="role-title">Big Data & Cloud Developer — Abzooba India Infotech Pvt. Ltd.</p>
+        <p class="role-meta">Pune, India · Jun 2021 – Jun 2023</p>
+        <ul class="bullets">
+          <li>Delivered analytics-ready healthcare datasets by transforming 100+ GB of nested JSON (millions of rows) into clean, structured tables using Python, SQL, and PySpark.</li>
+          <li>Improved data accuracy by 25% via root cause analysis and fixes in transformation logic; reduced processing/reporting delays by up to 40% through Spark optimization.</li>
+          <li>Translated stakeholder requirements into validated ETL transformations and supported cross-functional analytics/reporting needs.</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <aside>
+      <h2>Contact & Skills</h2>
+      <div class="card">
+        <p><strong>Location:</strong> Los Angeles, CA</p>
+        <p><strong>Email:</strong> jadhavharshadas.2599@gmail.com</p>
+        <hr style="border:none;border-top:1px solid #eef2f6;margin:12px 0">
+        <div class="skill-list">
+          <p><strong>Languages:</strong> SQL, Python</p>
+          <p><strong>Analysis:</strong> Pandas, NumPy, EDA</p>
+          <p><strong>Viz:</strong> Tableau, Power BI</p>
+          <p><strong>DBs:</strong> PostgreSQL, MySQL</p>
+          <p><strong>Other:</strong> Excel (Pivot/DAX), Git, basic PySpark</p>
+        </div>
+      </div>
+
+      <h2>Education</h2>
+      <div class="card">
+        <p><strong>MS — Computer Science</strong><br>California State University, Los Angeles · Aug 2023 – May 2025</p>
+        <p style="margin-top:8px"><strong>B.Eng — Computer Engineering</strong><br>Savitribai Phule Pune University · Jul 2017 – Apr 2021</p>
+      </div>
+    </aside>
+
+  </div>
 
   <section>
-    <h2>Projects</h2>
+    <h2>Selected Projects</h2>
 
     <div class="card">
-      <h3>Crime Data Analysis & Visualization (LAPD)</h3>
-      <p>
-        Cleaned and standardized over 1M crime records using Python and SQL.
-        Built interactive Tableau dashboards to analyze crime trends, hotspots, and category distributions across Los Angeles.
-      </p>
-      <a href="https://github.com/harshadajadhav25/crime-data-analysis-visualization" target="_blank">
-        View Project on GitHub →
-      </a>
+      <h3 style="margin:0">Fraud Risk Analysis</h3>
+      <p class="role-meta">SQL • Python • Power BI • Feature engineering • Anomaly detection</p>
+      <p>End-to-end fraud risk analysis for 280K+ transactions: cleaning, feature creation (velocity, rolling counts), risk scoring, and Power BI dashboards for triage and monitoring.</p>
+      <div style="margin-top:12px" class="project-links">
+        <a href="https://github.com/harshadajadhav25/Fraud-Risk-Analysis" target="_blank">Repo →</a>
+        <a href="https://github.com/harshadajadhav25/Fraud-Risk-Analysis#readme" target="_blank">README →</a>
+      </div>
     </div>
 
     <div class="card">
-      <h3>NLP for SQL Query Conversion</h3>
-      <p>
-        Developed a deep learning model using LSTM to convert natural language queries into executable SQL statements, 
-        improving query accessibility for non-technical users.
-      </p>
-      <a href="https://github.com/harshadajadhav25" target="_blank">
-        View Project →
-      </a>
-    </div>
-
-    <div class="card">
-      <h3>Customer Segmentation Using Machine Learning</h3>
-      <p>
-        Applied K-Means clustering and market basket analysis to segment customers 
-        and uncover actionable sales insights from retail transaction data.
-      </p>
-      <a href="https://github.com/harshadajadhav25" target="_blank">
-        View Project →
-      </a>
+      <h3 style="margin:0">Crime Data Analysis & Visualization (LAPD)</h3>
+      <p class="role-meta">SQL • Python • Tableau • Geospatial analysis</p>
+      <p>Cleaned & standardized 1M+ LAPD crime records; built Tableau dashboards showing hotspots, time-series trends, and category breakdowns to support policy and operations.</p>
+      <div style="margin-top:12px" class="project-links">
+        <a href="https://github.com/harshadajadhav25/crime-data-analysis" target="_blank">Repo →</a>
+        <a href="https://github.com/harshadajadhav25/crime-data-analysis#readme" target="_blank">README →</a>
+      </div>
     </div>
 
   </section>
 
-</div>
+</main>
 
 <footer>
-  © 2026 Harshada Jadhav | Data Portfolio
+  © 2026 Harshada Jadhav — Data Analyst • LinkedIn: <a href="https://www.linkedin.com/in/harshada-jadhav/" style="color:#93c5fd" target="_blank">harshada-jadhav</a>
 </footer>
 
 </body>
