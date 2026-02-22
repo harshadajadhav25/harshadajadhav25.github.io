@@ -8,51 +8,155 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+      margin: 0;
+      background-color: #f4f6f8;
+      color: #333;
       line-height: 1.6;
     }
-    h1 { margin-bottom: 6px; }
-    .subtitle { color: #555; margin-bottom: 16px; }
-    .links a {
-      margin-right: 14px;
-      text-decoration: none;
-      font-weight: 600;
+
+    header {
+      background-color: #1f2937;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .links a {
+      margin: 0 10px;
+      color: #60a5fa;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 6px;
+      margin-bottom: 20px;
+    }
+
     .card {
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 16px;
-      margin-top: 12px;
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .card a {
+      color: #2563eb;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #1f2937;
+      color: white;
+      margin-top: 40px;
     }
   </style>
 </head>
 
 <body>
-  <h1>Harshada Jadhav</h1>
-  <div class="subtitle">Data Analyst | AWS | Python | SQL | Tableau</div>
 
+<header>
+  <h1>Harshada Jadhav</h1>
+  <p>Data Analyst | AWS | Python | SQL | Tableau</p>
   <div class="links">
     <a href="https://www.linkedin.com/in/harshada-jadhav/" target="_blank">LinkedIn</a>
     <a href="https://github.com/harshadajadhav25" target="_blank">GitHub</a>
     <a href="mailto:jadhavharshadas.2599@gmail.com">Email</a>
   </div>
+</header>
 
-  <h2>About</h2>
-  <p>
-    I build scalable ETL pipelines and analytics dashboards that turn complex datasets into actionable insights.
-    I have 2+ years of experience with AWS, Python, PySpark, SQL, and data visualization tools like Tableau.
-  </p>
+<div class="container">
 
-  <h2>Projects</h2>
+  <section>
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I am a Master's graduate in Computer Science from California State University, Los Angeles, with over 2 years of professional experience in Data Engineering. 
+        I specialize in building scalable ETL pipelines using AWS, Python, and PySpark, and transforming complex datasets into actionable business insights through SQL and data visualization.
+      </p>
+    </div>
+  </section>
 
-  <div class="card">
-    <h3>Crime Data Analysis & Visualization (LAPD)</h3>
-    <p>
-      Cleaned and standardized 1M+ crime records, analyzed trends using SQL/Python, and built interactive Tableau dashboards.
-    </p>
-    <p><em>Project page + links coming in Step 2.</em></p>
-  </div>
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="card">
+      <p><strong>Programming:</strong> Python, SQL, PySpark</p>
+      <p><strong>Cloud & Big Data:</strong> AWS (Glue, S3, Lambda, RDS, Athena, EC2), Databricks</p>
+      <p><strong>Visualization:</strong> Tableau, Power BI, Dash</p>
+      <p><strong>Databases:</strong> MySQL, PostgreSQL</p>
+      <p><strong>Tools:</strong> GitHub, CI/CD, Microsoft Suite</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>Crime Data Analysis & Visualization (LAPD)</h3>
+      <p>
+        Cleaned and standardized over 1M crime records using Python and SQL.
+        Built interactive Tableau dashboards to analyze crime trends, hotspots, and category distributions across Los Angeles.
+      </p>
+      <a href="https://github.com/harshadajadhav25/crime-data-analysis-visualization" target="_blank">
+        View Project on GitHub →
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>NLP for SQL Query Conversion</h3>
+      <p>
+        Developed a deep learning model using LSTM to convert natural language queries into executable SQL statements, 
+        improving query accessibility for non-technical users.
+      </p>
+      <a href="https://github.com/harshadajadhav25" target="_blank">
+        View Project →
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Customer Segmentation Using Machine Learning</h3>
+      <p>
+        Applied K-Means clustering and market basket analysis to segment customers 
+        and uncover actionable sales insights from retail transaction data.
+      </p>
+      <a href="https://github.com/harshadajadhav25" target="_blank">
+        View Project →
+      </a>
+    </div>
+
+  </section>
+
+</div>
+
+<footer>
+  © 2026 Harshada Jadhav | Data Portfolio
+</footer>
+
 </body>
 </html>
